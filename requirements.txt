@@ -1,0 +1,4 @@
+rich
+cli_ui
+mutagen
+cryptography
