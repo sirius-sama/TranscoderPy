@@ -249,11 +249,11 @@ def get_transcode_dir(flac_dir, output_dir, basename, output_format, resample):
     if output_format == "FLAC":
         basename += " [FLAC - Lossless]"
     elif output_format == "V0":
-        basename += " [MP3 - V0]"
+        basename += " [MP3-V0]"
     elif output_format == "320":
-        basename += " [MP3 - 320]"
+        basename += " [MP3-320]"
     else:
-        basename += " [MP3 - V2]"
+        basename += " [MP3-V2]"
     
     while path_length_exceeds_limit(flac_dir, basename):
         basename = input("The file paths in this torrent exceed the 180 character limit. \n\
@@ -397,7 +397,7 @@ def main():
         else:
             ArtistName = 'Various Artists'
     
-    basename = f"{ArtistName} - {AlbumName} - ({Year})"
+    basename = f"{ArtistName} - {AlbumName} ({Year})"
 
     if selected_format:
         if selected_format == choose_format[0]:
